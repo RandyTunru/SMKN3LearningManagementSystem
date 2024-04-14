@@ -1,4 +1,3 @@
-<<<<<<< HEAD:lms-smkn3-mks/src/components/Header/Header.css
 /* Header.css */
 .header {
     background: #FF8C00;
@@ -24,11 +23,3 @@
     margin-right: 20px; /* Memberikan jarak antara teks Admin dan batas kanan header */
   }
   
-=======
-.header{
-    background: orange;
-    width: 100%;
-    height: 100vh;
-    color: white;
-}
->>>>>>> 1a78ed8e8efa725b26beb158fb1e6346f959820e:src/components/Header/Header.css

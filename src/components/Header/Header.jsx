@@ -1,4 +1,3 @@
-<<<<<<< HEAD:lms-smkn3-mks/src/components/Header/Header.jsx
 import React from "react";
 import '../Assets/smkn3makassar.png';
 import './Header.css';
@@ -27,15 +26,4 @@ export const Header = ({Auth}) => {
   );
 
 }
-=======
-import React from "react";
-import '../Assets/smkn3makassar.png'
-
-export const Header = () => {
-    <div>
-        <header className="header">Learning Management System</header>
-    </div>
-
-}
->>>>>>> 1a78ed8e8efa725b26beb158fb1e6346f959820e:src/components/Header/Header.jsx
 export default Header;
