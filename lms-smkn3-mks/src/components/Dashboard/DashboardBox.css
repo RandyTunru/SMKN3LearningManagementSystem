@@ -1,0 +1,22 @@
+.box{
+    width: 300px;
+    height: 120px;
+    background-color: #FF8C00;
+    padding: 10px;
+    margin: 50px;
+    color: white;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px;
+}
+
+
+/* DashboardBox.css */
+.icon {
+    margin-right: 10px; /* Memberikan ruang antara ikon dan teks */
+  }
+  
+  .text {
+    margin: 0; /* Menghapus margin default dari paragraf */
+  }
+  
