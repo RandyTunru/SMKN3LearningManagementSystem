@@ -19,7 +19,7 @@ export const Header = ({Auth}) => {
     </div>
     <div className="right-side">
       <h2>| {Auth}</h2>
-      <IoMdArrowDropdown size={30}/>
+      <IoMdArrowDropdown className="btn-dropdown"size={30}/>
     </div>
     </div>
     

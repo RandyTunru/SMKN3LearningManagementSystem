@@ -3,7 +3,8 @@ import { LoginPage } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
 import { TeacherDashboard } from './pages/TeacherDashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DailyReport from './pages/DailyReport';
+import {DailyReport} from './pages/DailyReport';
+import {DailyReportTable} from './pages/DailyReportTable';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />}/>
       <Route path="/teacher-dashboard" element={<TeacherDashboard/>}/>
       <Route path="/daily-report-teacher" element={<DailyReport/>}/>
+      <Route path="/daily-report-table" element={<DailyReportTable/>}/>
     </Routes>
   </Router>
   );

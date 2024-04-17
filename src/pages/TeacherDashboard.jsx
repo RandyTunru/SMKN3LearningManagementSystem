@@ -10,11 +10,14 @@ import List from '../components/Assets/list.png';
 import { Link } from "react-router-dom";
 
 
+
 export const TeacherDashboard = () => {
   return (
     <body>
     <div class="dashboard-wrapper">
+    <Link to="/teacher-dashboard" className='no-underline'>
     <Header Auth="Teacher"/>
+    </Link>
     </div>
     <div>
     <img className="school-pict"src={Photo} alt="smkn3picture"/>

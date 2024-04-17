@@ -13,7 +13,9 @@ export const Dashboard = () => {
     return(
     <body>
     <div class="dashboard-wrapper">
+    <Link to="/Dashboard" className='no-underline'>
     <Header Auth="Admin"/>
+    </Link>
     </div>
     <div>
     <img className="school-pict"src={Photo} alt="smkn3picture"/>

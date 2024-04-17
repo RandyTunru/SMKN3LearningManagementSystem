@@ -15,11 +15,18 @@
     align-items: center; /* Mengatur item-item ke tengah secara vertikal */
   }
   
-  .menu-button{
-    margin: 30px 0px 10px 20px ;
+  .menu-button {
+    margin: 20px 10px 10px 20px ;
   }
   
   .right-side {
-    margin-right: 20px; /* Memberikan jarak antara teks Admin dan batas kanan header */
+   /* Memberikan jarak antara teks Admin dan batas kanan header */
+    display: flex;
   }
+
+
+  .btn-dropdown{
+    margin-top: 20px;
+  }
+ 
   
