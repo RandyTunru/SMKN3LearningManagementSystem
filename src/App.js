@@ -1,12 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import { Login } from './components/LoginForm/Login';
+import { LoginPage } from './pages/Login';
+import { Dashboard } from './pages/Dashboard';
+import { TeacherDashboard } from './pages/TeacherDashboard';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {DailyReport} from './pages/DailyReport';
+import {DailyReportTable} from './pages/DailyReportTable';
 
 function App() {
   return (
-   <div>
-    <Login/>
-   </div>
+    <Router>
+    <Routes>
+      <Route path="/login" element={<LoginPage />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
+      <Route path="/teacher-dashboard" element={<TeacherDashboard/>}/>
+      <Route path="/daily-report-teacher" element={<DailyReport/>}/>
+      <Route path="/daily-report-table" element={<DailyReportTable/>}/>
+    </Routes>
+  </Router>
   );
 }
 

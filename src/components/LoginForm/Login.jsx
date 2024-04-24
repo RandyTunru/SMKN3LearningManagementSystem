@@ -1,41 +1,39 @@
 import React from 'react';
 import './Login.css';
-import { FaUser, FaLock } from "react-icons/fa";
-import Header from '../Header/Header';
-import  smkn3makassarLogo from '../Assets/smkn3makassar.png'
+import '../Header/Header.jsx';
+import  smkn3makassarLogo from '../Assets/smkn3makassar.png';
+import {Link } from 'react-router-dom';
+import Header from '../Header/Header.jsx';
 
 
 export const Login = () => {
   return (
-    <div className='main-wrapper'>
-    <div className='header'>
-    <h2>
-      Learning Management System
-    </h2>
-    </div>
-    <div className="logo">
-      
-    </div>
-    <div className="wrapper">
+    <body>
+    <Header Auth=""/>
+    <div className="login-wrapper">
+      <h1>Welcome to Learning Management System</h1>
       <img className="logo" src={smkn3makassarLogo} alt="logo"/>
       <form action="login">
-        <h1>Login</h1>
         <div>
+         
           <input type="text" className="input-box" placeholder='Username' required />
-          <FaUser className='icon'/>
         </div>
         <div>
           <input type="password" className="input-box" placeholder='Password' required />
-          <FaLock className='icon'/>
+          
         </div>
         <div className='remember-forgot'>
           <label><input type="checkbox"/> Remember me</label>
           <a href='#'>Forgot password?</a>
         </div>
+        <Link to='/Dashboard'>
         <button className="login-button" type="submit">Login</button>
+        </Link>
       </form>
     </div>
-    </div>
+    </body>
+   
+    
   )
 }
 export default Login;
