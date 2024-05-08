@@ -1,28 +1,32 @@
-.box-menu{
-    width: 200px;
-    margin-left: 10px;
-    width: 300px;
-    height: 120px;
-    background-color: #FF8C00;
-    padding: 10px;
-    margin: 50px;
-    color: white;
-    font-size: 24px;
-    border-radius: 15px;
-    border: 1px;
-    display: flex; /* Menggunakan flexbox */
-    align-items: center; /* Mengatur item secara vertikal di tengah */
-
+.box-menu {
+  max-width: 100%;
+  margin-left: 10px;
+  height: 120px;
+  background-color: #FF8C00;
+  padding: 10px;
+  margin: 50px;
+  color: white;
+  font-size: 24px;
+  border-radius: 15px;
+  border: 1px;
+  display: flex;
+  align-items: center;
 }
 
-
-.school-pict{
-  width: 100%;
-  height: auto; /* Mengisi seluruh tinggi tampilan */
-  background-size: cover; /* Memastikan gambar mengisi seluruh area */
-  background-position: center; /* Posisi gambar di tengah */
+.sidebar-and-content {
+  display: flex;
 }
 
-.no-underline{
+.school-pict {
+  max-width: 100%;
+  height: auto;
+}
+
+.no-underline {
   text-decoration: none;
+  color: white;
+}
+
+.content-wrapper {
+  margin-left: 300px;
 }
