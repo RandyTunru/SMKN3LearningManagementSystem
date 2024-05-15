@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Teacher/ReportBox.css';
+import './ReportBox.css';
 import {AddReportButton} from '../Buttons/AddReportButton.jsx';
 import { FaPen } from "react-icons/fa";
 

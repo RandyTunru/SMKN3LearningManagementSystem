@@ -1,5 +1,5 @@
 import React from 'react';
-import './DashboardBox.css'; // Import file CSS untuk styling
+import '../Dashboard/DashboardBox.css'; // Import file CSS untuk styling
 
 export const DashboardBox = ({ className, Text, src, imageSize }) => {
     return (

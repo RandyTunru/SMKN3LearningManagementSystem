@@ -8,6 +8,7 @@ import TeachMaterial from '../components/Assets/book.png';
 import Schedule from '../components/Assets/calendar.png';
 import List from '../components/Assets/list.png';
 import { Link } from "react-router-dom";
+import Sidebar from '../components/Sidebar/Sidebar.jsx';
 
 
 
@@ -15,9 +16,10 @@ export const TeacherDashboard = () => {
   return (
     <body>
     <div class="dashboard-wrapper">
-    <Link to="/teacher-dashboard" className='no-underline'>
-    <Header Auth="Teacher"/>
-    </Link>
+    
+    <Header Auth="Teacher" dashboardPage="/teacher-dashboard"/>
+    <Sidebar/>
+    
     </div>
     <div>
     <img className="school-pict"src={Photo} alt="smkn3picture"/>
