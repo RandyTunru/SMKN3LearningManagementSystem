@@ -5,6 +5,7 @@ import { TeacherDashboard } from './pages/TeacherDashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {DailyReport} from './pages/DailyReport';
 import {DailyReportTable} from './pages/DailyReportTable';
+import {RekapPresensi} from './pages/RekapPresensi';
 import {HeadmasterDashboard} from './pages/HeadmasterDashboard';
 import {VicePrincipalDashboard} from'./pages/VicePrincipalDashboard';
 import DailyReportCheck from './pages/DailyReportCheck';
@@ -21,6 +22,7 @@ function App() {
       <Route path="/teacher-dashboard" element={<TeacherDashboard/>}/>
       <Route path="/daily-report-teacher" element={<DailyReport/>}/>
       <Route path="/daily-report-table" element={<DailyReportTable/>}/>
+      <Route path="/rekap-presensi" element={<RekapPresensi/>}/>
       <Route path="/headmaster-dashboard"element={<HeadmasterDashboard/>}/>
       <Route path="/vice-principal-dashboard"element={<VicePrincipalDashboard/>}/>
       <Route path="/daily-report-checklist"element={<DailyReportCheck/>}/>
