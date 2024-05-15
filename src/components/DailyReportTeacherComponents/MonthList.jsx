@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Teacher/MonthList.css';
+import './MonthList.css';
 
 export const MonthList = () => {
   const [selectedMonth, setSelectedMonth] = useState('');
@@ -9,7 +9,7 @@ export const MonthList = () => {
   };
 
   return (
-    <div >
+    <div className='dropdown'>
       <select className='btn-month-list' value={selectedMonth} onChange={handleSelectMonth}>
         <option value="">Select a month</option>
         <option value="January">January</option>
