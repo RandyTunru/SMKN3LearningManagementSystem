@@ -60,44 +60,42 @@ export const Login = () => {
 
   return (
     <body>
-    <div className='header-login'>
-      <h2>Learning Management System</h2>
-    </div>
-    <div className="login-wrapper">
-      <h1>Welcome to Learning Management System</h1>
-      <img className="logo" src={smkn3makassarLogo} alt="logo"/>
-      <form action="login">
-        <div>
-          <input 
-          type="text" 
-          className="input-box" 
-          placeholder='Username' 
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
-        <div>
-          <input 
-          type="password" 
-          className="input-box" 
-          placeholder='Password'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}/>
+      <div className='header-login'>
+        <h2>Learning Management System</h2>
+      </div>
+      <div className="login-wrapper">
+        <h1>Welcome to Learning Management System</h1>
+        <img className="logo" src={smkn3makassarLogo} alt="logo"/>
+        <form action="login">
+          <div>
+            <input 
+            type="text" 
+            className="input-box" 
+            placeholder='Username' 
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div>
+            <input 
+            type="password" 
+            className="input-box" 
+            placeholder='Password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}/>
+            
+          </div>
+          {/* <div className='remember-forgot'>
+            <label><input type="checkbox"/> Remember me</label>
+            <a href='#'>Forgot password?</a>
+          </div> */}
           
-        </div>
-        <div className='remember-forgot'>
-          <label><input type="checkbox"/> Remember me</label>
-          <a href='#'>Forgot password?</a>
-        </div>
-        
-        <button className="login-button" onClick={handleLogin}>Login</button>
-        {error && <p className="error-message">{error}</p>}
-        
-      </form>
-    </div>
+          <button className="login-button" onClick={handleLogin}>Login</button>
+          {error && <p className="error-message">{error}</p>}
+          
+        </form>
+      </div>
     </body>
-   
-    
   )
 }
 export default Login;

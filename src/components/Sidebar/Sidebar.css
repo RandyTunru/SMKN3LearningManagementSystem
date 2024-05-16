@@ -7,16 +7,18 @@
     left: 0;
     padding: 20px;
     margin-top: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   }
   
   .sidebar-brand {
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* CSS khusus untuk logo */
   .logo {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     display: block;
     margin-bottom: 20px;

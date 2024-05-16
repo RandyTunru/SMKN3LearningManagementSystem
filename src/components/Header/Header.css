@@ -15,9 +15,9 @@
   right: 0; /* Menempatkan header di kanan browser */
 }
 
-  .header h2{
-    margin-left: 16px;
-  }
+.header h2{
+  margin-left: 5vw;
+}
   
   
   
@@ -25,6 +25,13 @@
   
 .dropdown {
   position: relative;
+}
+
+.dropdown-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
 }
 
 .dropdown-header {
@@ -65,7 +72,7 @@
 }
 
 .btn-dropdown{
-    margin-top: 20px;
+  margin-left: 3px;
 }
  
   
