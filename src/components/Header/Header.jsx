@@ -14,20 +14,23 @@ export const Header = ({Auth, dashboardPage}) => {
   };
   return(
     <header className='header'>
-    <div className='left-side'>
-    <div className="menu-button">
-    </div>
-    <h2>
-      <Link to={dashboardPage} className="no-underline">
-      Learning Management System
-      </Link>
-    </h2>
-    </div>
-    <div className="right-side">
-    <div className="dropdown">
-          <h2 onClick={toggleDropdown}>
-            {Auth} <IoMdArrowDropdown className="btn-dropdown" size={30}/>
-          </h2>
+      <div className='left-side'>
+        <div className="menu-button">
+        </div>
+        <h2>
+          <Link to={dashboardPage} className="no-underline">
+          Learning Management System
+          </Link>
+        </h2>
+      </div>
+      <div className="right-side">
+        <div className="dropdown">
+          <div className="dropdown-text">
+            <h2 onClick={toggleDropdown} >
+              {Auth} 
+            </h2>
+            <IoMdArrowDropdown className="btn-dropdown" size={30}/>
+          </div>
           {isDropdownOpen && (
             <div className="dropdown-content">
               {/* Place your dropdown content here */}
@@ -37,8 +40,8 @@ export const Header = ({Auth, dashboardPage}) => {
               </ul>
             </div>
           )}
-    </div>
-    </div>
+        </div>
+      </div>
     </header>
     
   );

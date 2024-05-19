@@ -1,22 +1,23 @@
-.box{
-    width: 30%;
-    height: auto;
-    background-color: #FF8C00;
-    padding: 10px;
-    margin: 100px;
-    color: white;
-    font-size: 14px;
-    border-radius: 15px;
-    border: 1px;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box-menu{
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-self: center;
 }
 
 
 /* DashboardBox.css */
 .icon {
-    margin-right: 10px; /* Memberikan ruang antara ikon dan teks */
-  }
+  max-width: 35%;
+}
   
-  .text {
-    margin: 0; /* Menghapus margin default dari paragraf */
-  }
+.text {
+  font-size: 0.7em;
+}
   
