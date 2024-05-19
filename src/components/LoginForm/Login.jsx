@@ -39,7 +39,7 @@ export const Login = () => {
   const redirectToPage = (username) => {
     switch (username) {
       case 'admin':
-        navigate('/dashboard');
+        navigate('/dashboard-admin');
         break;
       case 'teacher':
         navigate('/teacher-dashboard');
@@ -61,10 +61,10 @@ export const Login = () => {
   return (
     <body>
     <div className='header-login'>
-      <h2>Learning Management System</h2>
+      <h2>School Management System</h2>
     </div>
     <div className="login-wrapper">
-      <h1>Welcome to Learning Management System</h1>
+      <h1>Welcome to School Management System</h1>
       <img className="logo" src={smkn3makassarLogo} alt="logo"/>
       <form action="login">
         <div>

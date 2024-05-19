@@ -96,6 +96,8 @@ const ReportTable = ({ columns }) => {
               />
         */}
               {/* Sisa input data */}
+              <div  className="input-wrapper">
+              <h4>Kegiatan</h4>
               <input
                 className='input-box'
                 type="text"
@@ -104,6 +106,10 @@ const ReportTable = ({ columns }) => {
                 value={formData.description || ''}
                 onChange={handleInputChange}
               />
+              </div>
+              
+              <div></div>
+              <h4></h4>
               <input
                 className='input-box'
                 type="text"

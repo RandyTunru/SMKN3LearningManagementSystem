@@ -4,23 +4,20 @@ import {ReportBox} from '../components/DailyReportTeacherComponents/ReportBox.js
 import {MonthList} from '../components/DailyReportTeacherComponents/MonthList.jsx';
 import { Link } from "react-router-dom";
 import '../styles/Dashboard.css';
-import Sidebar from '../components/Sidebar/Sidebar.jsx';
+import TeacherSidebar from '../components/Sidebar/TeacherSidebar.jsx';
 
 
 export const DailyReport = () => {
   return (
-    <body>
+    <div>
         <Header Auth="Teacher" dashboardPage="/teacher-dashboard"/>
-        <Sidebar/>
+        <TeacherSidebar/>
         <MonthList/>
         <Link to="/daily-report-table" className='no-underline'><ReportBox/></Link>
         <Link to="/daily-report-table" className='no-underline'><ReportBox/></Link>
         <Link to="/daily-report-table" className='no-underline'><ReportBox/></Link>
         <Link to="/daily-report-table" className='no-underline'><ReportBox/></Link>
-
-
-      
-    </body>
+    </div>
   )
 }
 

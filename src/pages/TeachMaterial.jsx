@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Sidebar from '../components/Sidebar/Sidebar';
+import TeacherSidebar from '../components/Sidebar/TeacherSidebar';
 import Box from '../components/TeachMaterialComponents/Box';
 import '../styles/TeachMaterial.css';
 import LearningPlanIcon from '../components/Assets/rpp.png'
@@ -11,7 +11,7 @@ function TeachMaterial() {
   return (
     <div>
         <Header Auth="Teacher"/>
-        <Sidebar/>
+        <TeacherSidebar/>
         <div className='content-wrapper-teach'>
           <h2>Kumpulkan Dokumen</h2>
         <div className='box-wrapper'>

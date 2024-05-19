@@ -6,6 +6,7 @@ import '../styles/Dashboard.css'
 import Report from '../components/Assets/report.png';
 import TeachMaterial from '../components/Assets/book.png';
 import { Link } from "react-router-dom";
+import AdminSidebar from '../components/Sidebar/AdminSidebar.jsx';
 
 
 
@@ -14,7 +15,8 @@ export const HeadmasterDashboard = () => {
     <body>
     <div class="dashboard-wrapper">
     <Link to="/headmaster-dashboard" className='no-underline'>
-    <Header Auth="Teacher"/>
+    <Header Auth="Teacher" dashboardPage='/dashboard-admin'/>
+    <AdminSidebar/>
     </Link>
     </div>
     <div>

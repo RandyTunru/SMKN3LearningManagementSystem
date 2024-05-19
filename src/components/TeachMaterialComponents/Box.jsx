@@ -27,4 +27,4 @@ export const Box = ({src,text, link}) => {
   )
 }
 
-export default Box
+export default Box;

@@ -4,8 +4,8 @@ import Header from '../components/Header/Header.jsx';
 import {Link} from 'react-router-dom';
 import DailyReportProfile from '../components/DailyReportTeacherComponents/DailyReportProfile.jsx';
 import Line from '../components/Assets/line.png';
-import Sidebar from '../components/Sidebar/Sidebar.jsx';
-
+import TeacherSidebar from '../components/Sidebar/TeacherSidebar.jsx';
+import '../styles/DailyReportTable.css';
 export const DailyReportTable = () => {
   const columns = [
     {
@@ -41,8 +41,8 @@ export const DailyReportTable = () => {
   ];
 
   return (
-    <body>
-    <Sidebar/>
+   <div className="content-report-table-wrapper">
+    <TeacherSidebar/>
     <Header Auth="Teacher" dashboardPage="/teacher-dashboard"/>
     <div>
       <DailyReportProfile desc="Nama Guru" data="Julaaskina, S.Pd"/>
@@ -55,10 +55,10 @@ export const DailyReportTable = () => {
       
       <ReportTable columns={columns} data={data} />
     </div>
-    </body>
+   </div>
 
   );
 };
 
 
-export default DailyReportTable
+export default DailyReportTable;

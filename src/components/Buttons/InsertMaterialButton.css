@@ -1,0 +1,15 @@
+.fill-report-view-insert-material-button{
+    background-color: #85929E ;
+    color: white;
+    width: 25%;
+    height: 10px;
+    font-size: 8px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex; /* Menjadikan flex container */
+    align-items: center; /* Mengatur konten ke tengah secara vertikal */
+    padding: 10px;
+    margin: 10px auto;
+
+    
+}

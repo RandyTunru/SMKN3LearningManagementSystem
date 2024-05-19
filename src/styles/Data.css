@@ -1,0 +1,21 @@
+.main-content-data{
+    margin: 300px 100px 100px 400px;
+    color: grey;
+}
+
+.student-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .student-table th,
+  .student-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .student-table th {
+    background-color: #f2f2f2;
+  }
+  
