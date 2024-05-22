@@ -99,11 +99,66 @@ const DataGuru = () => {
         setCurrentPage(1); // Reset to the first page of the filtered results
     };
 
+    const [isAdding, setIsAdding] = useState(false);
+
+    const handleAddClick = () => {
+        setIsAdding(true);
+    };
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+
+        const namaGuru = event.target.namaGuru.value;
+        const mataPelajaran = event.target.mataPelajaran.value;
+        const kelas = event.target.kelas.value;
+
+        const newItem = {
+            namaGuru,
+            mataPelajaran,
+            kelas
+        };
+
+        setTableItems([...TableItems, newItem]);
+        setIsAdding(false);
+    };
+
     return (
         <MainLayout>
+            {isAdding ? (
+                <div className="bg-white rounded flex flex-col">
+                    <h2 className="mb-4 font-bold text-lg">Tambah Data Guru</h2>
+                    <form>
+                        <div className="mb-4">
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="namaGuru">
+                                Nama Guru
+                            </label>
+                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type='text' id="namaGuru" />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="mataPelajaran">
+                                Mata Pelajaran
+                            </label>
+                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type='text' id="mataPelajaran" />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-gray-</div>700 text-sm font-bold mb-2" htmlFor="kelas">
+                                Kelas
+                            </label>
+                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type='text' id="kelas" />
+                        </div>
+                        <div className="flex items-center justify-between">
+                            <button onSubmit={handleFormSubmit} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                                Simpan
+                            </button>
+                            <button className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" onClick={handleAddClick}>
+                                Kembali
+                            </button>
+                        </div>
+                    </form>
+               </div>
+            ) : (<>
             <div className='flex flex-col gap-5 w-full'>
                 <h1>Data Guru</h1>
-
                 <div className='flex w-full'>
                     <input
                         placeholder='Cari Nama Guru'
@@ -111,7 +166,7 @@ const DataGuru = () => {
                         onChange={handleInputChange}
                         className="border rounded px-4 py-2"
                     />
-                    <button className="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">
+                    <button onClick={handleAddClick} className="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">
                         Tambah Data Guru +
                     </button>
                 </div>
@@ -147,6 +202,7 @@ const DataGuru = () => {
                     <PageButton currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
                 </div>
             </div>
+        </>)}
         </MainLayout>
     );
 };
