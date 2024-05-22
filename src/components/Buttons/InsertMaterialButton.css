@@ -7,7 +7,6 @@
     text-align: center;
     border-radius: 5px;
     display: flex; /* Menjadikan flex container */
-    align-items: center; /* Mengatur konten ke tengah secara vertikal */
     padding: 10px;
     margin: 10px auto;
 

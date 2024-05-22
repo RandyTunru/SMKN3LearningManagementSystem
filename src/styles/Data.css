@@ -18,4 +18,8 @@
   .student-table th {
     background-color: #f2f2f2;
   }
+
+.table-wrapper{
+  margin: 200px 400px;
+}
   
