@@ -15,7 +15,7 @@ import Sidebar from '../components/Sidebar/Sidebar.jsx';
 export const TeacherDashboard = () => {
   return (
     <div className="dashboard-wrapper">
-            <Header Auth="Admin" />
+            <Header Auth="Teacher" />
             <div className="sidebar-and-content">
                 <Sidebar />
                 <div className="content">

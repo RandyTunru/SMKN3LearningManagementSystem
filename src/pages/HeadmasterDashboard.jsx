@@ -13,7 +13,7 @@ import Sidebar from '../components/Sidebar/Sidebar.jsx';
 export const HeadmasterDashboard = () => {
   return (
     <div className="dashboard-wrapper">
-            <Header Auth="Admin" />
+            <Header Auth="Headmaster" />
             <div className="sidebar-and-content">
                 <Sidebar />
                 <div className="content">
