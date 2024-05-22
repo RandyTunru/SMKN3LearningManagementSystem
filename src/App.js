@@ -12,11 +12,13 @@ import DailyReportCheck from './pages/DailyReportCheck';
 import TeachMaterial from './pages/TeachMaterial';
 import DailyReportForViceView from './pages/DailyReportForViceView';
 import ReportTableforViceView from './pages/ReportTableforViceView';
+import DataGuru from './pages/DataGuru';
 
 function App() {
   return (
     <Router>
     <Routes>
+      <Route path="*" element={<LoginPage/>}/>
       <Route path="/login" element={<LoginPage />}/>
       <Route path="/dashboard" element={<Dashboard />}/>
       <Route path="/teacher-dashboard" element={<TeacherDashboard/>}/>
@@ -29,6 +31,7 @@ function App() {
       <Route path="/teach-material"element={<TeachMaterial/>}/>
       <Route path="/daily-report-teacher-for-vice-view"element={<DailyReportForViceView/>}/>
       <Route path="/report-table-vice-view"element={<ReportTableforViceView/>}/>
+      <Route path="/data-guru" element={<DataGuru/>}/>
     </Routes>
   </Router>
   );

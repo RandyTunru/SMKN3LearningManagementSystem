@@ -14,29 +14,29 @@ import Sidebar from '../components/Sidebar/Sidebar.jsx';
 
 export const TeacherDashboard = () => {
   return (
-    <body>
-    <div class="dashboard-wrapper">
-    
-    <Header Auth="Teacher" dashboardPage="/teacher-dashboard"/>
-    <Sidebar/>
-    
-    </div>
-    <div>
-    <img className="school-pict"src={Photo} alt="smkn3picture"/>
-    </div>
-    
-    <div className="content-wrapper">
-    <tr>
-        <th><Link to="/daily-report-teacher" className='no-underline'><DashboardBox className="box-menu" Text="Laporan Mengajar Harian" src={Report} imageSize="100px"/></Link></th>
-        <th><Link to="/teach-material" className='no-underline'><DashboardBox className="box-menu" Text="RPP dan Bahan Ajar" src={TeachMaterial} imageSize="100px"/></Link></th>
-        <th><Link to="/schedule" className='no-underline'><DashboardBox className="box-menu" Text="Jadwal Mengajar " src={Schedule} imageSize="100px"/></Link></th>
-    </tr>
-    <tr>
-        <th><Link to="/presensi-siswa" className='no-underline'><DashboardBox className="box-menu" Text="Presensi Siswa" src={List} imageSize="100px"/></Link></th>
-    </tr>
-    </div>
-    </body>
-   
+    <div className="dashboard-wrapper">
+            <Header Auth="Admin" />
+            <div className="sidebar-and-content">
+                <Sidebar />
+                <div className="content">
+                    <img className="school-pict" src={Photo} alt="smkn3picture" />
+                    <div className="content-wrapper">
+                        <table>
+                            <tbody>
+                              <tr>
+                                <th><Link to="/daily-report-teacher" className='no-underline'><DashboardBox className="box-menu" Text="Laporan Mengajar Harian" src={Report} imageSize="100px"/></Link></th>
+                                <th><Link to="/teach-material" className='no-underline'><DashboardBox className="box-menu" Text="RPP dan Bahan Ajar" src={TeachMaterial} imageSize="100px"/></Link></th>
+                                <th><Link to="/schedule" className='no-underline'><DashboardBox className="box-menu" Text="Jadwal Mengajar " src={Schedule} imageSize="100px"/></Link></th>
+                              </tr>
+                              <tr>
+                                  <th><Link to="/presensi-siswa" className='no-underline'><DashboardBox className="box-menu" Text="Presensi Siswa" src={List} imageSize="100px"/></Link></th>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
   )
 }
 
