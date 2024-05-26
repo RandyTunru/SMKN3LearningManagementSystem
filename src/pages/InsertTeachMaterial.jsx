@@ -17,7 +17,7 @@ function InsertTeachMaterial() {
         <Header Auth='Teacher'/>
         <TeacherSidebar/>
     <div className='main-content-insert-material'>
-       <div className="container mx-auto p-4">
+       <div className="container mx-auto max-w-screen-xl p-4">
        <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Materi dan Bahan Ajar </h4>
       <button
         onClick={addBox}
@@ -25,11 +25,12 @@ function InsertTeachMaterial() {
       >
         Upload Materi
       </button>
-      </div>
       <div className="grid grid-cols-1 gap-4">
         {boxes.map((index) => (
           <InputMaterialBox key={index} index={index + 1} />
         ))}
+      </div>
+    
       </div>
     
    </div>

@@ -19,11 +19,15 @@ import TeacherData from './pages/TeacherData';
 import StudentData from './pages/StudentData';
 import VicePrincipalData from './pages/VicePrincipalData';
 import HeadmasterData from './pages/HeadmasterData';
+import DataGuru from './pages/DataGuru';
+import KepsekPage from './pages/KepsekPage';
+import WakasekPage from './pages/WakasekPage';
 
 function App() {
   return (
     <Router>
     <Routes>
+      <Route path="*" element={<LoginPage/>}/>
       <Route path="/login" element={<LoginPage />}/>
       <Route path="/dashboard-admin" element={<Dashboard />}/>
       <Route path="/teacher-dashboard" element={<TeacherDashboard/>}/>
@@ -39,12 +43,10 @@ function App() {
       <Route path="/profile-setting"element={<ProfileSetting/>}/>
       <Route path="/teacher-schedule"element={<ScheduleTeacher/>}/>
       <Route path="/teach-material-insert-page"element={<InsertTeachMaterial/>}/>
-      <Route path="/data-guru"element={<TeacherData/>}/>
       <Route path="/data-siswa"element={<StudentData/>}/>
-      <Route path="/data-wakasek-kurikulum"element={<VicePrincipalData/>}/>
-      <Route path="/data-kepala-sekolah"element={<HeadmasterData/>}/>
-      
-
+      <Route path="/data-wakasek"element={<WakasekPage/>}/>
+      <Route path="/data-kepala-sekolah"element={<KepsekPage/>}/>
+      <Route path="/data-guru" element={<DataGuru/>}/>
     </Routes>
   </Router>
   );

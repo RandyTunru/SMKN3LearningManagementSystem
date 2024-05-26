@@ -1,0 +1,101 @@
+/* Wakasek.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.biodata-section {
+  margin-bottom: 20px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.informasi {
+  flex: 1;
+}
+
+.informasi h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.informasi label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.informasi input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pengalaman-item {
+  margin-bottom: 10px;
+}
+
+.pengalaman-item label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.pengalaman-item input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center; /* Menempatkan tombol di tengah */
+  margin-top: 10px; /* Memberi jarak antara tombol dan input */
+}
+
+.button-group button {
+  padding: 10px 20px; /* Menambahkan padding */
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px; /* Memberi sedikit jarak antara tombol */
+}
+
+.button-group button.edit {
+  background-color: #007bff; /* Warna biru untuk tombol edit */
+  color: white;
+  border: none;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 12px 20px;
+}
+
+.button-group button.save {
+  background-color: #28a745; /* Warna hijau untuk tombol save */
+  color: white;
+  border: none;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 12px 20px;
+}
+
+.button-group button:hover {
+  filter: brightness(90%); /* Mengurangi kecerahan saat tombol dihover */
+}
+

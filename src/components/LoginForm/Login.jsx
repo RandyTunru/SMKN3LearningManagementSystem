@@ -60,7 +60,7 @@ export const Login = () => {
 
   return (
     <body>
-      <div className='header-login'>
+      <div className='header-login flex items-center pl-4'>
         <h2>Learning Management System</h2>
       </div>
       <div className="login-wrapper">

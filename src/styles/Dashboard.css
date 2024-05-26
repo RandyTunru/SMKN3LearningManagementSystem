@@ -3,6 +3,11 @@
   flex-wrap: wrap;
   justify-content: space-around; /* Untuk memastikan elemen berada dalam satu baris */
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .box-menu {
   max-width: 100%;
@@ -36,7 +41,10 @@
   color: white;
 }
 
-.content-wrapper {
-  margin-left: 300px;
+.content {
+  margin-left: 250px;
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
 }
 
