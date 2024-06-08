@@ -15,13 +15,15 @@ import ReportTableforViceView from './pages/ReportTableforViceView';
 import ProfileSetting from './pages/ProfileSetting';
 import ScheduleTeacher from './pages/ScheduleTeacher';
 import InsertTeachMaterial from './pages/InsertTeachMaterial';
-import TeacherData from './pages/TeacherData';
 import StudentData from './pages/StudentData';
-import VicePrincipalData from './pages/VicePrincipalData';
-import HeadmasterData from './pages/HeadmasterData';
 import DataGuru from './pages/DataGuru';
 import KepsekPage from './pages/KepsekPage';
 import WakasekPage from './pages/WakasekPage';
+import MakeSchedule from './pages/MakeSchedule';
+import MakeScheduleTable from './pages/TableMakeSchedule';
+import TeachMaterialViceView from './pages/TeachMaterialViceView';
+import TableViewTeachMaterial from './pages/TableViewTeachMaterial';
+import UploadedMaterialsPage from './pages/UploadedMaterials';
 
 function App() {
   return (
@@ -47,6 +49,12 @@ function App() {
       <Route path="/data-wakasek"element={<WakasekPage/>}/>
       <Route path="/data-kepala-sekolah"element={<KepsekPage/>}/>
       <Route path="/data-guru" element={<DataGuru/>}/>
+      <Route path="/make-schedule" element={<MakeSchedule/>}/>
+      <Route path="/make-schedule-table" element={<MakeScheduleTable/>}/>
+      <Route path="/teach-material-vice-view" element={<TeachMaterialViceView/>}/>
+      <Route path="/uploaded-materials" element={<UploadedMaterialsPage/>}/>
+      
+
     </Routes>
   </Router>
   );

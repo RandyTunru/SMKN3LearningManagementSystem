@@ -14,6 +14,7 @@ export const TeacherDashboard = () => {
   return (
     <div className="dashboard-wrapper">
       <Header Auth="Teacher" dashboardPage="/teacher-dashboard"/>
+      <div className="sidebar-and-content">
       <TeacherSidebar/>
 
       <div className="content">
@@ -26,6 +27,7 @@ export const TeacherDashboard = () => {
             <Link to="/presensi-siswa" className='no-underline'><DashboardBox className="box-menu" Text="Presensi Siswa" src={List} imageSize="100px"/></Link>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

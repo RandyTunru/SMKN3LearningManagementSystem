@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 
 
 function DailyReportForViceView() {
+  
   return (
     <div>
         <Header Auth="Wakasek Kurikulum"/>

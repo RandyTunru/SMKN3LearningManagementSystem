@@ -6,7 +6,7 @@ import '../styles/Data.css';
 function HeadmasterData() {
   return (
     <div>
-        <Header/>
+        <Header />
         <AdminSidebar/>
         <div className='main-content-data'>
             <h4>Data kepala sekolah</h4>

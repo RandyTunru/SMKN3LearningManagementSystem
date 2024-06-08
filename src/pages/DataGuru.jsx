@@ -125,7 +125,7 @@ const DataGuru = () => {
     };
 
     return (
-        <div>
+        <div className='content-wrapper-component'>
         <Header/>
         <AdminSidebar/>
         <div className='table-wrapper'>

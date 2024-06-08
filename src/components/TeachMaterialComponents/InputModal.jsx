@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const InputModal = ({ onClose, onUpload }) => {
-  const handleUploadClick = () => {
-    // Simulasikan proses pengunggahan file
-    // Panggil onUpload untuk memberi tahu InputMaterialBox bahwa file berhasil diunggah
-    onUpload();
+  const [filename, setFilename] = useState('');
+  const [file, setFile] = useState(null);
+
+  const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
   };
+
+  const handleFilenameChange = (e) => {
+    setFilename(e.target.value);
+  };
+
+  const handleUploadClick = (e) => {
+    e.preventDefault();
+    if (file) {
+      onUpload({ filename, file });
+      onClose();  // Close the modal after successful upload
+    } else {
+      alert('Please select a file to upload.');
+    }
+  };
+
   return (
-    <div id="authentication-modal" tabindex="-1" aria-hidden="true" className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
+    <div id="authentication-modal" tabIndex="-1" aria-hidden="true" className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
       <div className="relative w-full max-w-md p-4 bg-white rounded-lg shadow dark:bg-gray-700">
         <div className="flex items-center justify-between p-4 border-b rounded-t dark:border-gray-600">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Unggah Dokumen</h3>
@@ -19,13 +35,33 @@ const InputModal = ({ onClose, onUpload }) => {
           </button>
         </div>
         <div className="p-4">
-          <form className="space-y-4" action="#">
+          <form className="space-y-4" onSubmit={handleUploadClick}>
+            <div>
+              <label htmlFor="filename" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama File</label>
+              <input
+                type="text"
+                name="filename"
+                id="filename"
+                className="block w-full p-2.5 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-lg dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                value={filename}
+                onChange={handleFilenameChange}
+                required
+              />
+            </div>
             <div>
               <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih File</label>
-              <input type="file" name="file" id="file" className="block w-full p-2.5 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-lg dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+              <input
+                type="file"
+                name="file"
+                id="file"
+                accept="application/pdf"
+                className="block w-full p-2.5 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-lg dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                onChange={handleFileChange}
+                required
+              />
             </div>
             <button
-              onClick={handleUploadClick}
+              type="submit"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Unggah

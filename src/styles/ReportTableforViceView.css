@@ -2,3 +2,65 @@
     color: gray;
     margin: 80px 320px;
 }
+
+main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  main h2 {
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #ff8c00;
+    color: white;
+  }
+  
+  table td .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+  }
+  
+  .belum-dibuat {
+    background-color: #7a7a7a;
+  }
+  
+  .menunggu-persetujuan {
+    background-color: #d3a60b;
+  }
+  
+  .telah-disetujui {
+    background-color: #4caf50;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .buat-laporan {
+    background-color: #ff8c00;
+  }
+  
+  .lihat-laporan {
+    background-color: #6a5acd;
+  }
+  

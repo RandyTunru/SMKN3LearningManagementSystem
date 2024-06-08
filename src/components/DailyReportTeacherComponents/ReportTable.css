@@ -12,6 +12,7 @@
   .table td {
     padding: 8px;
     border: 1px solid #ddd;
+    border-radius: 3px;
   }
   
   .table tbody tr:nth-child(even) {
@@ -19,7 +20,7 @@
   }
   
 .table thead th {
-    background-color: #FF8C00; /* Warna latar belakang */
+    background-color: #F97316; /* Warna latar belakang */
     color: #fff; /* Warna teks */
     padding: 8px;
     border: 1px solid #ddd;

@@ -16,13 +16,13 @@ export const VicePrincipalSidebar = () => {
           </a>
         </li>
         <li>
-          <a href="/daily-report-teacher">
+          <a href="/daily-report-teacher-for-vice-view">
             <i className="fas fa-home"></i>
             Laporan Mengajar Harian
           </a>
         </li>
         <li>
-          <a href="/teach-material">
+          <a href="/teach-material-vice-view">
             <i className="fas fa-book"></i>
             RPP dan Bahan Ajar
           </a>

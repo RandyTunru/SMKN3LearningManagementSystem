@@ -13,6 +13,7 @@ function InsertTeachMaterial() {
     setBoxes([...boxes, boxes.length]);
   }
   return (
+    
     <div>
         <Header Auth='Teacher'/>
         <TeacherSidebar/>

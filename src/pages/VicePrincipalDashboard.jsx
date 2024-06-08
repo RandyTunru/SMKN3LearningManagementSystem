@@ -20,9 +20,9 @@ export const VicePrincipalDashboard = () => {
                     <img className="school-pict" src={Photo} alt="smkn3picture" />
                     <div className="content-wrapper">
                         <div className="flex-container">
-                            <Link to="/teach-material" className='no-underline'><DashboardBox className="box-menu" Text="RPP dan Bahan Ajar" src={TeachMaterial} imageSize="80px"/></Link>
+                            <Link to="/teach-material-vice-view" className='no-underline'><DashboardBox className="box-menu" Text="RPP dan Bahan Ajar" src={TeachMaterial} imageSize="80px"/></Link>
                             <Link to="/daily-report-teacher-for-vice-view" className='no-underline'><DashboardBox className="box-menu" Text="Laporan Mengajar Harian" src={Report} imageSize="80px"/></Link>
-                            <Link to="/schedule" className='no-underline'><DashboardBox className="box-menu" Text="Jadwal Kegiatan Belajar Mengajar" src={Schedule} imageSize="80px"/></Link>
+                            <Link to="/make-schedule" className='no-underline'><DashboardBox className="box-menu" Text="Jadwal Kegiatan Belajar Mengajar" src={Schedule} imageSize="80px"/></Link>
                             <Link to="/data-wakasek" className='no-underline'><DashboardBox className="box-menu" Text="Data Wakasek Kurikulum" src={Wakasek} imageSize="80px" /></Link>
                             <Link to="/presensi-siswa" className='no-underline'><DashboardBox className="box-menu" Text="Rekapitulasi Presensi Siswa" src={List} imageSize="60px"/></Link>
                         </div>

@@ -3,7 +3,6 @@ import './Login.css';
 import '../Header/Header.jsx';
 import  smkn3makassarLogo from '../Assets/smkn3makassar.png';
 import {Link, useNavigate} from 'react-router-dom';
-import Header from '../Header/Header.jsx';
 
 
 const userData = {
@@ -61,7 +60,7 @@ export const Login = () => {
   return (
     <body>
       <div className='header-login flex items-center pl-4'>
-        <h2>Learning Management System</h2>
+        <h2 className='text-2xl font-extrabold'>Learning Management System</h2>
       </div>
       <div className="login-wrapper">
         <h1>Welcome to Learning Management System</h1>

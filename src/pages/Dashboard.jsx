@@ -20,11 +20,11 @@ export const Dashboard = () => {
                     <img className="school-pict" src={Photo} alt="smkn3picture" />
                     <div className="content-wrapper">
                         <div className="flex-container">
-                            <Link to="/data-guru" className='no-underline'><DashboardBox className="box-menu" Text="Data Guru" src={Teacher} imageSize="80px" /></Link>
-                            <Link to="/data-siswa" className='no-underline'><DashboardBox className="box-menu" Text="Data Siswa" src={Student} imageSize="80px" /></Link>
-                            <Link to="/data-kepala-sekolah" className='no-underline'><DashboardBox className="box-menu" Text="Data Kepala Sekolah " src={Headmaster} imageSize="80px" /></Link>
-                            <Link to="/data-wakasek" className='no-underline'><DashboardBox className="box-menu" Text="Data Wakasek Kurikulum" src={Wakasek} imageSize="80px" /></Link>
-                            <Link to="/rekapitulasi-absen" className='no-underline'><DashboardBox className="box-menu" Text="Rekapitulasi Absen" src={File} imageSize="80px" /></Link>
+                            <Link to="/data-guru" className='no-underline'><DashboardBox className="box-menu" Text="Data Guru" src={Teacher} imageSize="100px" /></Link>
+                            <Link to="/data-siswa" className='no-underline'><DashboardBox className="box-menu" Text="Data Siswa" src={Student} imageSize="100px" /></Link>
+                            <Link to="/data-kepala-sekolah" className='no-underline'><DashboardBox className="box-menu" Text="Data Kepala Sekolah " src={Headmaster} imageSize="100px" /></Link>
+                            <Link to="/data-wakasek" className='no-underline'><DashboardBox className="box-menu" Text="Data Wakasek Kurikulum" src={Wakasek} imageSize="100px" /></Link>
+                            <Link to="/rekapitulasi-absen" className='no-underline'><DashboardBox className="box-menu" Text="Rekapitulasi Absen" src={File} imageSize="100px" /></Link>
                         </div>
                     </div>
                 </div>

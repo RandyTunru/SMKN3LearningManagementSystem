@@ -17,7 +17,7 @@ export const Header = ({Auth, dashboardPage}) => {
       <div className='left-side'>
         <div className="menu-button">
         </div>
-        <h2>
+        <h2 className="text-2xl font-extrabold">
           <Link to={dashboardPage} className="no-underline">
           Learning Management System
           </Link>
