@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Sidebar from '../components/Sidebar/Sidebar';
+import VicePrincipalSidebar from '../components/Sidebar/VicePrincipalSidebar';
 import {AiOutlineFile, AiOutlineLike} from 'react-icons/ai';
 import ReportTableForVice from '../components/DailyReportTeacherComponents/ReportTableForVice';
 import '../styles/ReportTableforViceView.css';
@@ -13,6 +13,7 @@ export const ReportTableforViceView = () =>{
         ],
         []
       );
+      
     
       const columns = React.useMemo(
         () => [
@@ -35,12 +36,9 @@ export const ReportTableforViceView = () =>{
   return (
     <div>
     <Header Auth="Wakasek Kurikulum"/>
-    <Sidebar/>
+    <VicePrincipalSidebar/>
     <h4 className="title-page">Laporan Mengajar Harian</h4>
     <ReportTableForVice columns={columns} data={data}/>
-    
-
-
       
     </div>
   )

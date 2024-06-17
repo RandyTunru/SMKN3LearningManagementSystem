@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MainLayout } from '../layout/MainLayout';
 import PageButton from '../components/pageButton/pageButton';
+import Header from '../components/Header/Header';
+import AdminSidebar from '../components/Sidebar/AdminSidebar';
 
 const dataTableItems = [
     {
@@ -123,7 +125,10 @@ const DataGuru = () => {
     };
 
     return (
-        <MainLayout>
+        <div className='content-wrapper-component'>
+        <Header/>
+        <AdminSidebar/>
+        <div className='table-wrapper'>
             {isAdding ? (
                 <div className="bg-white rounded flex flex-col">
                     <h2 className="mb-4 font-bold text-lg">Tambah Data Guru</h2>
@@ -166,7 +171,7 @@ const DataGuru = () => {
                         onChange={handleInputChange}
                         className="border rounded px-4 py-2"
                     />
-                    <button onClick={handleAddClick} className="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">
+                    <button onClick={handleAddClick} className="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Tambah Data Guru +
                     </button>
                 </div>
@@ -203,9 +208,10 @@ const DataGuru = () => {
                 </div>
             </div>
         </>)}
-        </MainLayout>
-    );
-};
+        </div>
+        </div>
+        
+)};
 
 
 export default DataGuru;

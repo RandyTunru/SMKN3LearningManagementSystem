@@ -1,4 +1,4 @@
-.fill-report-button{
+.fill-add-report-button{
     background-color: #85929E ;
     color: white;
     width: 25%;
@@ -10,7 +10,7 @@
     justify-content: center; /* Mengatur konten ke tengah secara horizontal */
     align-items: center; /* Mengatur konten ke tengah secara vertikal */
     padding: 10px;
-    margin: 40px auto;
+    margin: 20px auto;
 }
  
 .text-report-btn{

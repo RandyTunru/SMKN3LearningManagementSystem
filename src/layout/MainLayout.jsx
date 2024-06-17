@@ -5,16 +5,16 @@ import './MainLayout.css';
 
 export const MainLayout = ({children}) =>{
     return (
-        <div className=''>
-            <Header Auth="Admin" dashboardPage="/dashboard"/>
-            <div className="sidebar-and-content">
-                <Sidebar />
-                <div className="layout-content">
-                    <div className='content-card'>
-                        {children}
-                    </div>
-                </div>
+        <div>
+        <Header />
+        <div>
+            <Sidebar />
+            <div className="children">
+                {children}
             </div>
         </div>
+    </div>
     )
-}
+};
+
+export default MainLayout;

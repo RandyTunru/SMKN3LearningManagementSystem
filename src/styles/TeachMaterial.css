@@ -1,10 +1,7 @@
 .content-wrapper-teach{
-    width: 40%;
-    background-color: white;
-    border: 1px solid #ccc;
+    
     margin: 300px 300px 100px 300px;
-    border-radius: 5px;
-    align-items: center;
+    
 }
 .box-wrapper{
     display: flex;
@@ -17,3 +14,14 @@
     font-weight: normal;
     
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Untuk memberi jarak antar elemen */
+    gap: 20px; /* Atur jarak antar box sesuai kebutuhan */
+  }
+  
+  .flex-item {
+    flex: 1;
+  }
+  
